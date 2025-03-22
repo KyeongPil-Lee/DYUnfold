@@ -31,7 +31,7 @@ void produce_respM() {
   // -- reading TTree
   TChain* chain = new TChain("Events");
   // -- under KNU
-  // TString path_DYMC = "/pnfs/knu.ac.kr/data/cms/store/user/sungwon/DY_Run2_UL_NanoAOD/2018/DYJetsToMuMu_M-50/DYJetsToMuMu_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/DYJetsToMuMu_M-50/241017_133720/0000";
+  TString path_DYMC = "/pnfs/knu.ac.kr/data/cms/store/user/sungwon/DY_Run2_UL_NanoAOD/2018/DYJetsToMuMu_M-50/DYJetsToMuMu_M-50_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos/DYJetsToMuMu_M-50/241017_133720/0000";
   // // chain->Add(path_DYMC+"/*.root"); // -- use all files
   chain->Add(path_DYMC+"/tree_52.root"); // -- largest file
   chain->Add(path_DYMC+"/tree_108.root"); // -- 2nd largest file
